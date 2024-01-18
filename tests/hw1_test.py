@@ -1,5 +1,5 @@
 import pytest
-from hw1 import compute_linear_fit, compute_polynomial_fit
+from src.hw1 import compute_linear_fit, compute_polynomial_fit
 
 def test_linear_fit():
     x, y, a = compute_linear_fit()
