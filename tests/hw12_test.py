@@ -8,7 +8,7 @@ def test_calculate_non_embedding_params():
     dim_feedforward = 3072
     result = hw12.calculate_non_embedding_params(dim_embd, n_heads, n_layers, dim_feedforward)
     assert result == 84934656  # Expected result
-
+ 
 def test_calculate_flops_per_token():
     # Test with example parameters
     dim_embd = 768

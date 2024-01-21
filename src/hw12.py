@@ -8,7 +8,7 @@ def calculate_non_embedding_params(dim_embd, n_heads, n_layers, dim_feedforward)
     ffn_params_per_layer = (dim_embd * dim_feedforward) + (dim_feedforward * dim_embd)
     total_params_per_layer = mha_params_per_layer + output_proj_params + ffn_params_per_layer
     return total_params_per_layer * n_layers
- 
+
 # Function to calculate FLOPs for matrix multiplication
 def calculate_flops(i, j, k):
     return 2 * i * j * k
