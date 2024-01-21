@@ -9,6 +9,7 @@ stages:
 before_script:
   - python --version
   - pip install -r requirements.txt
+  - export PYTHONPATH=./src:$PYTHONPATH  
 
 build:
   stage: build
